@@ -3,7 +3,7 @@
     margin: 0 auto;
     width: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 40px;
     border: none;
@@ -54,6 +54,9 @@
     border-radius: 2px ;
 }
 .container{
-    margin: 0;
+    margin: 0 10px 0 0;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
