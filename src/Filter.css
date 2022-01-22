@@ -1,0 +1,53 @@
+.filter{
+    background-color: white;
+    margin: 0 auto;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 5px rgba(122,122,122,0.5);
+    color: darkgrey;
+}
+.items{
+    margin: 0 0 0 15px;
+    background-color: white;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.buttons__Active{
+    margin: 0 0 0 10px;
+    border: none;
+    background-color: white;
+    color: grey;
+}
+.buttons__Active:hover{
+    border:1px solid #ead7d7;
+    border-radius: 2px ;
+}
+.buttons__Completed{
+    margin: 0 0 0 10px;
+    border: none;
+    background-color: white;
+    color: grey;
+}
+.buttons__Completed:hover{
+    border:1px solid #ead7d7;
+    border-radius: 2px ;
+}
+.buttons__All{
+    border: none;
+    background-color: white;
+    color: grey;
+}
+.buttons__All:hover{
+    border:1px solid #ead7d7;
+    border-radius: 2px ;
+}

@@ -1,0 +1,49 @@
+.item-delete{
+    cursor: pointer;
+}
+.input-check{
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    margin: 10px 10px 0 0;
+}
+.input-item{
+    background-color: white;
+    padding-left: 50px;
+    border: none;
+    font-size: 25px;
+}
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-todo{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    height: 60px;
+    border: none;
+    font-size: 25px;
+    box-shadow: 0 0 5px rgba(122,122,122,0.5);
+}
+.item-delete{
+    margin: 0 10px 0 0;
+    background-color: white;
+    color: #ead7d7;
+    font-size: 20px;
+}
+.task-item{
+    background-color: white;
+    margin: 0 10px 0 0;
+}
+.item-todo__check{
+    background-color: white;
+    margin: 0 0 0 10px;
+}
+.input-check:focus{
+    background-color: white;
+}
