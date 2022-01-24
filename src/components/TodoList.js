@@ -1,18 +1,19 @@
-import { useSelector } from "react-redux";
-import { getTodosByVisibilityFilter } from "../Redux/selector";
-import { Todo } from "./Todo";
+import {useSelector} from "react-redux";
+import {getTodosByVisibilityFilter} from "../Redux/selector";
+import {Todo} from "./Todo";
 import {VisibilityFilter} from "./VisibilityFilter";
-
+import {ChakraProvider} from "@chakra-ui/react";
 
 export const TodoList = () => {
-    const { todos, visibilityFilter } = useSelector(state => state);
-    const filterTodos = getTodosByVisibilityFilter(todos, visibilityFilter);
+    const filterTodos = useSelector(getTodosByVisibilityFilter);
     return (
         <div>
             {filterTodos.map(todo => (
-                <Todo key={`todo-${todo.id}`} todo={todo} />
+                <Todo key={`todo-${todo.id}`} todo={todo}/>
             ))}
-            <VisibilityFilter />
+            <ChakraProvider>
+                <VisibilityFilter/>
+            </ChakraProvider>
         </div>
     )
 }

@@ -5,25 +5,25 @@ const initialState = {
 }
 
 const todos = (state = initialState, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case ADD_TODO: {
-            const { id, content } = action.payload;
+            const {id, content} = action.payload;
             return {
                 todos: [
                     ...state.todos,
-                    { content, completed: false, id }
+                    {content, completed: false, id}
                 ]
             }
         }
         case DELETE_TODO: {
-            const { id } = action.payload;
-            const todos = state.todos.filter(todo => todo.id !== id );
-            return { todos }
+            const {id} = action.payload;
+            const todos = state.todos.filter(todo => todo.id !== id);
+            return {todos}
         }
         case TOGGLE_TODO: {
-            const { id } = action.payload;
-            const todos = state.todos.map(obj => obj.id === id ? { ...obj, completed: !obj.completed } : obj);
-            return { todos }
+            const {id} = action.payload;
+            const todos = state.todos.map(obj => obj.id === id ? {...obj, completed: !obj.completed} : obj);
+            return {todos}
         }
 
         default: {

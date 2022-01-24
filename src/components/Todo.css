@@ -17,18 +17,25 @@
     text-decoration: line-through;
     color: gray;
 }
-
+.container_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    background: white;
+}
 .item-todo{
     background-color: white;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     align-items: center;
     width: 500px;
-    height: 60px;
+    min-height: 60px;
     border: none;
     font-size: 25px;
     box-shadow: 0 0 5px rgba(122,122,122,0.5);
+    text-align: start;
+
 }
 .item-delete{
     margin: 0 10px 0 0;
